@@ -1,0 +1,154 @@
+
+/* Style the header */
+
+.header {
+    background-color: #f1f1f1;
+    padding: 0px;
+    text-align: left;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 45px 45px;
+    text-decoration: none;
+  }
+
+  h1{
+    list-style-type: none;
+    margin: 10px;;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: block;
+    color: white;
+    margin-top: 30px;
+    
+  }
+
+  .body{
+    background-image: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .results{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .result{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+  }
+
+  .result.img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  button{
+    background-color: darkslategray;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+
+  }
+
+  button:active{
+    transform: scale(0.98);
+  }
+  button:focus{
+    outline: none;
+  }
+  .footer{
+    padding-bottom: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+   display: flex;
+  }
+  .footer div{
+    text-align: center;
+  }
+  .col-2{
+    flex-grow: 2;
+  }
+  .footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+  .col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #f1f1f1;
+    margin-bottom: 10px;
+  }
+  form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+  }
+  form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .social-icons{
+    margin-top: 30px;
+  }
+  .social-icons i{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+  }
