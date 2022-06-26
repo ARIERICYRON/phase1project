@@ -1,25 +1,11 @@
 
-const getCars = () => {
-    fetch('http://localhost:3000/Cars')
-    .then(res => res.json())
-    .then(data => {
-        //console.log(data)
-       data.forEach(cars => {
-  html = ""
-        html +=`
-        <div class="results">
-          <div id="car1" class="result">
-            <p>${cars.name}</p>
-           <img src = ${cars.image}/>
-          <div class="buttons">
-            <button id="get1">${cars.price}</button>
-          </div>
-        </div>
-        `
-        document.querySelector("#container").innerHTML = html
-    });
-    })
-
-    
+const api_url = ('https://vpic.nhtsa.dot.gov/api/vehicles/getallmakes?format=json')
+async function getVehicle(Make_ID, Name_ID){
+   const response = await fetch (api_url)
+   const data = await response.json()
+   console.log(data)
+   document.getElementById('ID').innerHTML = data.Make_ID
+   document.getElementById('NAME').innerHTML = data.Name_ID
+  
 }
-getCars()
+getVehicle()
